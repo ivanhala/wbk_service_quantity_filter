@@ -1,5 +1,4 @@
 <?php
-
 add_filter( 'wbk_service_quantity', 'my_service_quantity', 10, 3 );
 function my_service_quantity( $input, $service_id, $time) {
 	$weekday = date('N', $time );
@@ -31,5 +30,4 @@ function my_service_quantity( $input, $service_id, $time) {
 	}
  
 }
-
 ?>
